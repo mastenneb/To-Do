@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 15px 22px;
+  font-family: "Inter";
+  transition: .7s;
+  background: hsla(240, 11%, 96%, 1);
+}
+
+h1,
+h2,
+p,
+h4 {
+  margin: 0;
+}
+
+.head {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head h1 {
+  font-family: "Lilita One";
+  color: hsla(225, 73%, 57%, 1);
+}
+
+.input-box {
+  margin-top: 34px;
+  background: hsla(235, 0%, 100%, 0.82);
+  height: 190px;
+  max-height: 220px;
+  border-radius: 12px;
+  box-shadow: -1px 1px 5px hsla(201, 0%, 0%, 0.42);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 15px;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  border: none;
+  border-bottom: 1.5px solid hsla(214, 32%, 91%, 1);
+  background: transparent;
+  resize: none;
+  font-size: 1rem;
+  color: hsla(218, 23%, 23%, 1);
+  font-weight: 600;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom-color: hsla(225, 73%, 57%, 1);
+  outline: none;
+}
+
+textarea {
+  /* font-family: inherit; */
+  height: 50px;
+  font-size: .85rem;
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #fff;
+}
+
+.inputs h4 {
+  font-size: .85rem;
+  font-weight: 800;
+  color: hsla(225, 73%, 57%, 1);
+}
+
+input {
+  padding: 8px 0;
+}
+
+p {
+  font-family: "Roboto";
+  font-size: .55rem;
+  color: hsla(0, 100%, 51%, 1);
+  font-weight: 500;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  color: hsla(221, 0%, 0%, 1);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #606770;
+  font-size: 1rem;
+}
+
+.dark-mode button {
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+  border-radius: 34px;
+  border: none;
+  box-shadow: 0px 0px 2px hsla(221, 0%, 0%, 0.52);
+  position: relative;
+  padding: 0;
+}
+
+button span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background: hsla(221, 100%, 63%, 0.83);
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  box-shadow: -1px -1px 3px hsla(221, 0%, 0%, 0.35);
+  transition: .5s;
+}
+
+.move {
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px 0;
+  padding-right: 5px;
+}
+
+.btn {
+  width: 98px;
+  height: 38px;
+  background: hsla(225, 73%, 57%, 1);
+  border-radius: 35px;
+  border: none;
+  box-shadow: 1px 1px 2px hsla(235, 0%, 0%, 0.28);
+  font-size: 1rem;
+  font-weight: 900;
+  color: #fff;
+  font-family: "Roboto";
+  transition: .5s ease-out;
+}
+.btn:hover {
+  transform: translateY(4px);
+}
+
+.task {
+  background: hsla(225, 73%, 57%, 1);
+  box-shadow: 0 0 3px hsla(210, 0%, 0%, 0.3);
+  margin: 25px 0;
+  padding: 10px 20px;
+  border-radius: 9px;
+  color: #fff;
+  transition: .5s ease-in;
+  animation: fadeIn .5s ease-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.task:hover {
+  transform: translateY(12px) scale(1.03);
+}
+.task h4 {
+  font-size: .84rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  opacity: .8;
+  color: hsla(0, 0%, 100%, 1);
+}
+
+.task h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.task-btn {
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.task-btn button {
+  font-family: "Roboto";
+  /* padding: 10px; */
+  height: 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  width: 160px;
+}
+
+.task-btn button:nth-child(1) {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.task-btn button:nth-child(1):hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+.task-btn button:nth-child(2) {
+  background-color: #ffffff;
+  color: #4169E1;
+}
+
+.task-btn button:nth-child(2):hover {
+  background-color: #f0f0f0;
+}
+.dark-bg {
+  background: #121212;
+}
+.dark-input-box {
+  background: #1E1E1E;
+}
+.dark-add-btn , .dark-btn {
+  background: #5C9DFF;
+}
+.dark-text {
+  color: #0A0A0A;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TO-DO LIST</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c241a3dc2a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="head">
+    <h1 id="hh">📝TODO List</h1>
+    <div class="dark-mode">
+      <button id="dark-mode-btn"><span id="ball"></span></button>
+    </div>
+  </div>
+  <div class="input-box">
+    <div class="inputs">
+      <input type="text" id="title" placeholder="Enter Task Title" autofocus="on">
+      <div class="info">
+        <p></p>
+        <h4>Title</h4>
+      </div>
+    </div>
+    <div class="inputs">
+      <textarea id="note" placeholder="Enter Task here"></textarea>
+      <div class="info">
+        <p></p>
+        <h4>Note</h4>
+      </div>
+    </div>
+  </div>
+  <div class="move">
+    <button class="btn" id="btn"><i class="fa-solid fa-circle-plus"></i> Add</button>
+  </div>
+  <div class="task-box"></div>
+  
+  <script src="main.js"></script>
+  
+</body>
+
+</html>
