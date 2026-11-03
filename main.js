@@ -11,7 +11,7 @@ const datad = [];
 let mode = 1;
 
 
-window.addEventListener('load', function() {
+window.addEventListener('DOMContentLoaded', function() {
   
   
   titleField.value = localStorage.getItem('savedTitle');
